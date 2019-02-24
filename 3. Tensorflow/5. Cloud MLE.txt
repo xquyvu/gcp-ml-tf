@@ -1,0 +1,39 @@
+1. Question 1
+True or False: In the packaging model recommended in this module, the task.py file you create contains the actual ML model in TensorFlow
+
+== False - this is actually contained in model.py
+
+2. Question 2
+In model.py, what parts of the model are included? (choose all that apply)
+
+
+Training and evaluation input functions
+
+Feature columns
+
+Feature engineering
+
+Serving input function
+
+Train and evaluate loop
+
+The API keys for Cloud MLE
+
+3. Question 3
+What does the scale-tier represent in CMLE training jobs? (Select the 2 correct responses)
+
+== The type of hardware you want your model to run on
+
+The number of steps your model should scale to
+
+== The number of distributed machines your model should use
+
+4. Question 4
+True or False: the gcloud command line can used to submit the training job, either locally or to cloud
+
+== True
+
+5. Question 5
+True of False: a model can have multiple different versions that you can choose from to be deployed
+
+== True
