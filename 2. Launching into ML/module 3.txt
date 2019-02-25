@@ -1,0 +1,31 @@
+Question 1
+True or False - In ML, you could train using all your data and decide not to hold out a test set and still get a good model
+== True
+
+Question 2
+You are tasked with splitting your dataset into 80% training and 20% evaluation for your ML model. Your partner wrote the below SQL script for you to use. Should you use it to create your datasets? Why or why not
+
+== No - the use of RAND(), even if only called once to divide the training and validation dataset, makes the experiment not repeatable for anyone else trying to start with the same datapoints. Consider using a hash function and a modulo operator instead.
+
+Question 3
+What is a way to approximate or model real world unknown data? (choose all that apply)
+
+== Split your dataset into separate buckets and train your model only on a portion of that dataset (keeping the rest as held out which will model unseen data)
+
+== Increase the breadth and quality of the data you have available. The better the data, the easier it will be for the model to learn.
+
+Question 4
+What's a recommended way to split your dataset in a repeatable fashion using SQL?
+== Use a modulo operator and a hash function
+
+Question 5
+Check all the common pitfalls for splitting a dataset even if done properly:
+
+== You can no longer predict using the field you split the data on
+== Your splitting field may not be noisy enough for granular divides of your dataset
+== You might not have enough data to split the dataset into training, validation, and testing
+
+Question 6
+What can you do if your model passes validation but fails testing?
+== Stop model training and work to collect new data points before trying the same model again
+== Start from the beginning with a brand new model type
