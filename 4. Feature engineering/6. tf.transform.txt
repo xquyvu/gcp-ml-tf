@@ -1,0 +1,42 @@
+1. Question 1
+What is a common use case for where you would use tf.transform instead of a Cloud Dataflow pipeline or regular TensorFlow for preprocessing?
+
+
+== You want to scale your inputs based on min/max value in the dataset
+
+
+You want to invoke on-the-fly preprocessing for ML models based solely on the inputs to a model function as part of your graph
+
+
+You want to take a rolling-average of the number of cars at an intersection during the last hour
+
+
+== You need to compute the vocabulary list for categorical columns from your training dataset
+
+Question 21
+point
+2. Question 2
+The Analyze phase of tf.transform is carried out via:
+
+
+== A Python Beam pipeline that contains TensorFlow functions
+
+
+A TensorFlow program that contains Beam transforms
+
+Question 31
+point
+3. Question 3
+The Transform phase of tf.transform is carried out via:
+
+
+Inside a Beam pipeline for evaluation and in TensorFlow during training
+
+
+== Inside a TensorFlow serving input function during prediction
+
+
+== A Beam pipeline while creating a training or evaluation dataset
+
+
+Inside a Beam pipeline for training and in TensorFlow during evaluation

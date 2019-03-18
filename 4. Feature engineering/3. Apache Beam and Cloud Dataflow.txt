@@ -1,0 +1,37 @@
+1. Question 1
+Which of these accurately describes the relationship between Apache Beam and Cloud Dataflow?
+== Apache Beam is the API for data pipeline building in java or python and Cloud Dataflow is the implementation and execution framework.
+
+2. Question 2
+TRUE or FALSE: The Filter method can be carried out in parallel and autoscaled by the execution framework:
+== True
+
+3. Question 3
+What is the purpose of a Cloud Dataflow connector?
+.apply(TextIO.write().to(“gs://…”));
+
+
+== Connectors allow you to output the results of a pipeline to a specific data sink like Bigtable, Google Cloud Storage, flat file, BigQuery, and more...
+
+4. Question 4
+Below you'll find a Cloud Dataflow preprocessing graph. Correctly identify the terms for A, B, and C.
+
+
+==
+A is a data source,
+
+B are transformation steps, and
+
+C is a data sink
+
+5. Question 5
+To run a pipeline you need something called a ________
+== runner
+
+6. Question 6
+Your development team is about to execute this code block. What is your team about to do?
+== We are compiling our Cloud Dataflow pipeline written in Java and are submitting it to the cloud for execution
+
+7. Question 7
+TRUE or FALSE: A ParDo acts on all items at once (like a Map in MapReduce)
+== False

@@ -1,0 +1,31 @@
+1. Question 1
+You are training a model to predict how long it will take to sell a house. The list price of the house, with numeric $20,000 to $500,000 values, is one of the inputs to the model. Which of these is a good practice?
+== Rescale the real valued feature like a price to a range from 0 to 1
+
+2. Question 2
+Which of these tools are commonly used for data pre-processing? (Select 3 correct responses)
+== Apache Beam
+== BigQuery
+== TensorFlow
+
+3. Question 3
+Which one of these is NOT something you would commonly do in data preprocessing?
+== Tune your ML model hyperparameters
+
+4. Question 4
+In your TensorFlow model you are calculating the distance between two points on a map as a new feature. How do you ensure the preprocessing you're doing for model training is also do the exact same way in prediction?
+
+== Wrap features in training/evaluation input function AND wrap features in serving input function:
+
+5. Question 5
+The below code preprocesses the latitude and longitude using feature columns. What is the point of the 38.0 and 42.0 in the column buckets?
+== Latitudes must be between 38 and 42 will be discretized into the specified number of bins.
+
+6. Question 6
+What are two advantages of using TensorFlow to preprocess your code instead of building an Apache Beam pipeline? (Select two correct responses)
+== In TensorFlow you will have access to helper APIs to help automatically bucketize and process features instead of writing your own java or python code
+== In TensorFlow the same pipelines can be used in both training and serving
+
+7. Question 7
+What is one key advantage of preprocessing your features using Apache Beam?
+== The same code you use to preprocess features in training and evaluation can also be used in serving
